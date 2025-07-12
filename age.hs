@@ -2,7 +2,7 @@ import Data.Char (toLower)
 import System.Exit -- Success or Failure exit.
 import Text.Read (readMaybe) -- Safe parsing
 
-{- 
+{-
  MERMAID_DIAGRAM_START
  graph TD
      A[Start: main] --> B[Call getInput]
