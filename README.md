@@ -1,6 +1,6 @@
 # Age Calculator Algorithm
 
-The following flowchart represents the algorithm implemented in `age.hs`:
+The following flowchart represents the algorithm implemented in `app/Main.hs`:
 
 ```mermaid
 graph TD
@@ -52,7 +52,7 @@ The program follows these main steps:
 
 ```bash
 # Compile the program
-ghc -o age age.hs
+ghc -o age app/Main.hs
 
 # Run the program
 ./age
