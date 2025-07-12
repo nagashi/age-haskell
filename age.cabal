@@ -26,7 +26,7 @@ version:            0.1.0.0
 -- synopsis:
 
 -- A longer description of the package.
--- description:
+description:        Calulate age based on input of birth year and current/future year
 
 -- The license under which the package is released.
 license:            BSD-3-Clause
@@ -35,7 +35,7 @@ license:            BSD-3-Clause
 license-file:       LICENSE
 
 -- The package author(s).
-author:             Charles ORiley
+author:             Charles O'Riley
 
 -- An email address to which users can send suggestions, bug reports, and patches.
 maintainer:         ceoriley@gmail.com

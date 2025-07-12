@@ -1,6 +1,6 @@
 # Automation Flowchart Update System
 
-This setup allows for the automation update of the Mermaid flowchart in `README.md` whenever the modification of the algorithm in `age.hs` takes place.
+This setup allows for the automation update of the Mermaid flowchart in `README.md` whenever the modification of the algorithm in `app/Main.hs` takes place.
 
 ## How It Works
 
@@ -41,7 +41,7 @@ pip install watchdog
 ## File Structure
 
 ```
-├── age.hs              # Haskell source with embedded Mermaid diagram
+├── app/Main.hs              # Haskell source with embedded Mermaid diagram
 ├── README.md           # Markdown file with flowchart
 ├── update_flowchart.sh # Script to extract and update diagram
 ├── Makefile            # Build automation
@@ -51,10 +51,10 @@ pip install watchdog
 
 ## Maintaining the Diagram
 
-When the algorithm in `age.hs` is modified, also update the embedded Mermaid diagram in the comments. The automation will handle updating `README.md`.
+When the algorithm in `app/Main.hs` is modified, also update the embedded Mermaid diagram in the comments. The automation will handle updating `README.md`.
 
 ### Example workflow:
-1. Edit `age.hs` - modify both code and embedded diagram to match new algorithm
+1. Edit `app/Main.hs` - modify both code and embedded diagram to match new algorithm
 2. Save the file
 3. If using a watcher, `README.md` updates automatically
 4. If not, run `./update_flowchart.sh` or `make`
