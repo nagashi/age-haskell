@@ -49,3 +49,4 @@ sed -n '/^```$/,$p' "$MARKDOWN_FILE" >> "$TEMP_FILE"
 mv "$TEMP_FILE" "$MARKDOWN_FILE"
 
 echo "Successfully updated $MARKDOWN_FILE with diagram from $HASKELL_FILE"
+ 
