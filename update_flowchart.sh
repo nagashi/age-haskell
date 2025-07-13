@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Script to extract Mermaid diagram from age.hs and update README.md
+# Script to extract Mermaid diagram from app/Main.hs and update README.md
 
-HASKELL_FILE="age.hs"
+HASKELL_FILE="app/Main.hs"
 MARKDOWN_FILE="README.md"
 
 # Extract the Mermaid diagram from the Haskell file
