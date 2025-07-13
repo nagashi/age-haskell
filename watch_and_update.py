@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-File watcher script to automatically update README.md when age.hs changes.
+File watcher script to automatically update README.md when app/Main.hs changes.
 Requires: pip install watchdog
 """
 
@@ -20,8 +20,8 @@ class HaskellFileHandler(FileSystemEventHandler):
         if event.is_directory:
             return
             
-        # Only process age.hs changes
-        if not event.src_path.endswith('age.hs'):
+        # Only process Main.hs changes
+        if not event.src_path.endswith('Main.hs'):
             return
             
         # Debounce rapid file changes
@@ -53,7 +53,7 @@ def main():
         print(f"Error: {script_path} not found")
         sys.exit(1) # terminate program immediately and signal an error.
     
-    haskell_file = current_dir / "age.hs"
+    haskell_file = current_dir / "app" / "Main.hs"
     if not haskell_file.exists():
         print(f"Error: {haskell_file} not found")
         sys.exit(1) # terminate program immediately and signal an error.
@@ -61,7 +61,7 @@ def main():
     # Set up file watcher
     event_handler = HaskellFileHandler(str(script_path))
     observer = Observer()
-    observer.schedule(event_handler, str(current_dir), recursive=False)
+    observer.schedule(event_handler, str(current_dir / "app"), recursive=False)
     
     print(f"Watching {haskell_file} for changes...")
     print("Press Ctrl+C to stop")
