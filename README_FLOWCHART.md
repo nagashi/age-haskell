@@ -4,7 +4,7 @@ This setup allows for the automation update of the Mermaid flowchart in `README.
 
 ## How It Works
 
-1. **Embedded Diagram**: The Mermaid flowchart is embedded directly in `age.hs` as comments between `MERMAID_DIAGRAM_START` and `MERMAID_DIAGRAM_END` markers.
+1. **Embedded Diagram**: The Mermaid flowchart is embedded directly in `app/Main.hs` as comments between `MERMAID_DIAGRAM_START` and `MERMAID_DIAGRAM_END` markers.
 
 2. **Extraction Script**: `update_flowchart.sh` extracts the diagram from the Haskell code and updates the markdown file.
 
