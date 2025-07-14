@@ -19,7 +19,7 @@ This setup allows for the automation update of the Mermaid flowchart in `README.
 
 ### Option 2: Using Make
 ```bash
-# Update flowchart when age.hs changes
+# Update flowchart when app/Main.hs changes
 make README.md
 
 # Or use the default target
