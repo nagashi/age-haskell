@@ -33,7 +33,7 @@ import Text.Read (readMaybe) -- Safe parsing
 -}
 
 stringToLower :: String -> String
-stringToLower str = map toLower str
+stringToLower = map toLower
 
 -- Helper function to get a single integer input with a custom prompt
 getIntInput :: String -> IO Int
@@ -42,11 +42,9 @@ getIntInput prompt = do
   inputStr <- getLine
 
   case readMaybe inputStr :: Maybe Int of
-    Nothing -> do
-      if stringToLower inputStr == "quit"
-        then putStrLn "Exiting..." >> exitSuccess
-        else
-          putStrLn "Invalid input.  Please try again." >> getIntInput prompt
+    Nothing
+      | stringToLower inputStr == "quit" -> putStrLn "Exiting..." >> exitSuccess
+      | otherwise -> putStrLn "Invalid input.  Please try again." >> getIntInput prompt
     Just val -> return val
 
 -- Function to get both birth year and future year, returning a tuple
