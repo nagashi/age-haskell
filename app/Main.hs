@@ -29,6 +29,12 @@ import Text.Read (readMaybe) -- Safe parsing
      R --> S[Calculate age]
      S --> T[Print result]
      T --> U[End]
+    classDef yellowNode fill:#FFD700,color:#000,font-weight:bold;
+    class I,Q yellowNode;
+    classDef greenNode fill:#006400,color:#ffffff,font-weight:bold;
+    class A greenNode;
+    classDef redNode fill:#FF0000,color:#FFFFFF,font-weight:bold;
+    class H,P,U redNode;
  MERMAID_DIAGRAM_END
 -}
 
