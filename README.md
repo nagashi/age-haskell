@@ -1,4 +1,4 @@
-# Age Calculator Algorithm
+### <div align="center">Age Calculator Algorithm
 
 The following flowchart represents the algorithm implemented in `app/Main.hs`:
 
@@ -70,3 +70,7 @@ ghc -o age app/Main.hs
 - **Graceful Exit**: Type "quit" at any prompt to exit
 - **Error Handling**: Clear error messages for invalid input
 - **Case Insensitive**: Quit command works with any case combination
+
+<div align="right">
+    <img src="images/life.png" alt="Life is pushing a boulder up a mountain." width="200" height="150" float="left" border="3" />
+</div>
