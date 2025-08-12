@@ -71,6 +71,6 @@ ghc -o age app/Main.hs
 - **Error Handling**: Clear error messages for invalid input
 - **Case Insensitive**: Quit command works with any case combination
 
-<div align="right">
-    <img src="images/life.png" alt="Life is pushing a boulder up a mountain." width="200" height="150" float="left" border="3" />
+<div align="right"><br>
+    <img src="images/life.png" alt="Life is pushing a boulder up a mountain." width="150" height="100" float="left" border="1.75" />
 </div>
