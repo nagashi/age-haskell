@@ -72,5 +72,5 @@ ghc -o age app/Main.hs
 - **Case Insensitive**: Quit command works with any case combination
 
 <div align="right"><br>
-    <img src="images/life.png" alt="Life is pushing a boulder up a mountain." width="150" height="100" float="left" border="1.75" />
+    <img src="images/life.png" alt="Continuous learning." width="150" height="100" float="left" border="1.75" />
 </div>
